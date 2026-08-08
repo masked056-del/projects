@@ -185,7 +185,7 @@ body {
     justify-content: center;
     overflow: hidden;
     position: relative;
-    /* انحناء الركنين بتوع اليمين فقط للمربع */
+    /* انحناء الركنين بتوع اليمين فقط */
     border-top-right-radius: var(--radius-md);
     border-bottom-right-radius: var(--radius-md);
 }
@@ -196,12 +196,12 @@ body {
     opacity: 0.6;
 }
 
-/* ضبط حشو الصورة وانحناء الحواف يمين فقط */
 .project-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    /* انحناء الصورة يمين فقط */
     border-top-right-radius: var(--radius-md);
     border-bottom-right-radius: var(--radius-md);
 }
@@ -212,21 +212,24 @@ body {
     flex-direction: column;
 }
 
+/* ضبط حاوية الـ Tags لتكون مفروضة بالعرض */
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
     margin-bottom: 12px;
 }
 
+/* تصغير الـ Chips لتترتب جنب بعضها بشياكة */
 .tag {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
-    padding: 4px 10px;
+    padding: 3px 8px;
     background: var(--surface-secondary);
     color: var(--text);
     border: 1px solid var(--border);
     border-radius: var(--radius-full);
+    white-space: nowrap;
 }
 
 .project-title {
