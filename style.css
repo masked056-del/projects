@@ -149,7 +149,6 @@ body {
     gap: 24px;
 }
 
-/* الكارت بالهيكل الأفقي المظبوط */
 .project-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -164,30 +163,28 @@ body {
 @media (min-width: 650px) {
     .project-card {
         flex-direction: row;
-        align-items: stretch;
+        align-items: center;
     }
     
     .project-img-box {
-        width: 45%;
-        min-height: 260px;
+        width: 40%;
+        min-height: 220px;
     }
 
     .project-content {
-        width: 55%;
+        width: 60%;
     }
 }
 
-/* المربع المخصص للصورة */
 .project-img-box {
     width: 100%;
-    height: 200px;
+    height: 180px;
     background: var(--surface-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
-    flex-shrink: 0;
 }
 
 .project-img-box i {
@@ -196,26 +193,10 @@ body {
     opacity: 0.6;
 }
 
-/* الصورة داخل المربع */
-.project-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.project-card:hover .project-img {
-    transform: scale(1.04);
-}
-
-/* محتوى الكارت: الـ Tags والعنوان والوصف والأزرار */
 .project-content {
     padding: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .project-tags {
