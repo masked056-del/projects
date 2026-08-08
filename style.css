@@ -185,6 +185,9 @@ body {
     justify-content: center;
     overflow: hidden;
     position: relative;
+    /* انحناء الركنين بتوع اليمين فقط للمربع */
+    border-top-right-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md);
 }
 
 .project-img-box i {
@@ -193,12 +196,14 @@ body {
     opacity: 0.6;
 }
 
-/* ضبط حشو الصورة لتميل المستطيل بالضبط */
+/* ضبط حشو الصورة وانحناء الحواف يمين فقط */
 .project-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    border-top-right-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md);
 }
 
 .project-content {
